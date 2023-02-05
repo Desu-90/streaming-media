@@ -11,15 +11,19 @@ const onRequest = (request, response) => {
       htmlHandler.getIndex(request, response);
       break;
     case '/page2':
-        break;
+      mediaHandler.getBling(request, response);
+      break;
     case '/page3':
-        break;
+      mediaHandler.getBird(request, response);
+      break;
     case '/party.mp4':
       mediaHandler.getParty(request, response);
       break;
     case '/getBird':
+      mediaHandler.getBird(request, response);
       break;
     case '/getBling':
+      mediaHandler.getBling(request, response);
       break;
     default:
       htmlHandler.getIndex(request, response);
